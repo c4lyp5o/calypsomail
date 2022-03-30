@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .main
+    p.sign(align='center') Sign in
+    form.form1(method='post' path='/')
+        input.un(type='text' align='center' placeholder='Username' name='username')
+        input.pass(type='password' align='center' placeholder='Password' name='password')
+        input.submit(align='center' type='submit')
+        //- input(type='submit' value='Submit')
+        p.forgot(align='center')
+          a(href='#') Forgot Password?
